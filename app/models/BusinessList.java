@@ -10,7 +10,11 @@ public class BusinessList {
         list = new ArrayList();
     }
 
-    public String getAll() {
+    public ArrayList<Business> getAll() {
+        return list;
+    }
+
+    public String toString() {
         String result = "";
         for (int i = 0; i < list.size(); i++) {
             result += ("id: " + i + " " + list.get(i).name + "\n");

@@ -32,7 +32,7 @@ public class BusinessController extends Application {
     }
 
     public Result getAll() {
-        return ok(list.getAll());
+        return ok(views.html.business.render(list.getAll()));
     }
 
     public Result getBusiness(String num) {
