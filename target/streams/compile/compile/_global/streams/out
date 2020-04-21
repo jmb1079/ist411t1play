@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\james\Documents\PSU\IST411\Repos\ist411t1play\app\views\commonSidebar.scala.html:6:39: value explore is not a member of controllers.ReverseHomeController[0m
-[0m[[0m[31merror[0m] [0m[0m  <li><a href="@routes.HomeController.explore">Play application overview</a>[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\james\Documents\PSU\IST411\Repos\ist411t1play\app\views\commonSidebar.scala.html:7:39: value tutorial is not a member of controllers.ReverseHomeController[0m
-[0m[[0m[31merror[0m] [0m[0m  <li><a href="@routes.HomeController.tutorial">Implementing Hello World</a>[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
