@@ -3,16 +3,14 @@
 @main("GeoLocator") {
 @defining(play.core.PlayVersion.current) { version =>
 
-<section id="content">
+<section id="tabs">
   <div class="wrapper">
       <section id=links class="links">
         <div class="tabContainer">
             <div class="buttonContainer">
-                <button onclick="showPanel(0)">Business</button>
-                <button onclick="showPanel(1)">Individual</button>
+                <button onclick="location.href='business'">Business</button>
+                <button onclick="">Some Other Area</button>
             </div>
-            <div class="tabPanel"></div>
-            <div class="tabPanel"></div>
         </div>
     </section>
   </div>
