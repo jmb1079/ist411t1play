@@ -150,7 +150,6 @@ aside a[href^="http"]:after,.doc a[href^="http"]:after{content:url(/assets/image
 }
 .tabContainer{
     width: 100%;
-    height: 400px;
 }
 .tabContainer .buttonContainer{
     height: 15%;

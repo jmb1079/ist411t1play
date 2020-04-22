@@ -1,10 +1,10 @@
 @*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
-@(title: String)(tabs: Html)
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +22,14 @@
 <body>
     <section id="top">
         <div class="wrapper">
-            <h1>Geolocator</h1>
-            <div class="img-with-text" >
-                <img src="assets/images/lion.png" alt="logo" /> 
+            <h1><a href="/">Geolocator</a></h1>
+            <div class="img-with-text">
+                <img src="assets/images/lion.png" alt="logo" />
                 <h2>PSU Spring 2020, IST 411, Team 1</h2>
             </div>
+        </div>
     </section>
-    @tabs
+    @content
 </body>
 
 </html>

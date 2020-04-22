@@ -1,20 +1,18 @@
 @()
 
-@main("GeoLocator") {
+@main("Welcome") {
 @defining(play.core.PlayVersion.current) { version =>
-
-<section id="tabs">
-  <div class="wrapper">
-      <section id=links class="links">
-        <div class="tabContainer">
-            <div class="buttonContainer">
-                <button onclick="location.href='business'">Business</button>
-                <button onclick="">Some Other Area</button>
-            </div>
-        </div>
-    </section>
+  
+<section id="content">
+  @tabs()
+  <div class="wrapper doc">
+    <article>
+      <h2>Welcome</h2>
+      <h3>What is Geolocator?</h3>
+      <h3>Site Navigation</h3>
+      <h3>The team</h3>
+    </article>
   </div>
 </section>
-<script src="..\..\public\javascripts\main.js" />
 }
 }
