@@ -1,0 +1,20 @@
+@(bus: Business)
+
+@main("GeoLocator for Business"){
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="content">
+    @tabs()
+    <div class="wrapper doc">
+        <h1>Business</h1>
+        <ul style="list-style-type:none;">
+             <li>
+                 ID @bus.id: <br>
+                 @bus.name <br>
+                 @bus.address <br>
+                 @bus.city, @bus.state @bus.zipCode
+             </li>
+        </ul>
+    </div>
+</section>
+}}

@@ -11,3 +11,6 @@ POST          /business/create        controllers.BusinessController.createBusin
 GET           /business/read          controllers.BusinessController.getBusiness(id:String)
 PUT           /business/update        controllers.BusinessController.updateBusiness(id:String, name:String, address:String, city:String, state:String, zipcode:String)
 DELETE        /business/delete        controllers.BusinessController.deleteBusiness(id:String)
+
+GET           /individual             controllers.IndividualController.getAll()
+GET           /individual/read        controllers.IndividualController.getIndividual(id:String)

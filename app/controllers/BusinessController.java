@@ -13,12 +13,14 @@ public class BusinessController extends Application {
 
     public BusinessController() {
         list = new BusinessList();
-        Business business1 = new Business("Munsters", "1313 Mockingbird Ln.", "Mockingbird Heights", "CA", 90210);
-        Business business2 = new Business("Jeannie", "1020 Palm Drive", "Cocoa Beach", "FL", 32931);
-        Business business3 = new Business("Sanford & Son", "9114 South Central Avenue", "Los Angeles", "CA", 90002);
+        Business business1 = new Business("Gateman, Goodbury, and Graves Funeral Home", "1313 Mockingbird Lane.", "Mockingbird Heights", "CA", 90210);
+        Business business2 = new Business("Cape Canaveral AFS", "180 W Skid Strip Rd", "Cape Canaveral", "FL", 32920);
+        Business business3 = new Business("Sanford & Son Salvage", "9114 South Central Avenue", "Los Angeles", "CA", 90002);
+        Business business4 = new Business("The Show About Nothing, NBC Studios", "30 Rockefeller Plaza", "New York", "NY", 10112);
         list.addBusiness(business1);
         list.addBusiness(business2);
         list.addBusiness(business3);
+        list.addBusiness(business4);
     }
 
     public static Result index() {
@@ -37,7 +39,7 @@ public class BusinessController extends Application {
 
     public Result getBusiness(String num) {
         int index = (int) Integer.parseInt(num);
-        return ok(list.getBusiness(index));
+        return ok(views.html.businessDetail.render(list.getDetail(index)));
     }
 
     public Result updateBusiness(String num, String name, String address, String city, String state, String zipCode) {

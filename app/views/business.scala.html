@@ -7,11 +7,11 @@
 <section id="content">
     @tabs()
     <div class="wrapper doc">
-        <h1>Business</h1>
+        <h1>Businesses</h1>
         <ul style="list-style-type:none;">
             @for(bus <- list){ <li>
-                <button style="margin: 10px 0px 10px 0px; padding: 10px 0px 10px 0px; cursor: pointer;">
-                    @bus.id: @bus.name @bus.address, @bus.city, @bus.state @bus.zipCode
+                <button  onclick="location.href='business/read?id=@bus.id'" style="margin: 10px 0px 10px 0px; padding: 10px 0px 10px 0px; cursor: pointer;">
+                    ID @bus.id: @bus.name
                 </button>
                 </li>
                 }

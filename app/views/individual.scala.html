@@ -1,0 +1,19 @@
+@(list: List[Individual])
+
+@main("GeoLocator for Individuals"){
+@defining(play.core.PlayVersion.current) { version =>
+
+
+<section id="content">
+    @tabs()
+    <div class="wrapper doc">
+        <h1>Individuals</h1>
+        <table class="indTable" style="border: 1px; border-spacing: 8px;">
+            <tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
+            @for(ind <- list){
+                <tr onclick="location.href='individual/read?id=@ind.id'"><td>@ind.id</td><td>@ind.firstName</td><td>@ind.lastName</td></tr>
+            }
+        </table>
+    </div>
+</section>
+}}

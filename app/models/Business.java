@@ -23,4 +23,9 @@ public class Business {
         this.state = state;
         this.zipCode = zipCode;
     }
+
+    public String toString()
+    {
+        return "toString here";
+    }
 }

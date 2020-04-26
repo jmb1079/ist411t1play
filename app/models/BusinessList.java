@@ -27,7 +27,7 @@ public class BusinessList {
         updateIndex();
     }
 
-    public String getBusiness(int index) {
+    public String getBusinessText(int index) {
         String result = "";
         result += ("ID: " + list.get(index).id + "\n");
         result += ("Name: " + list.get(index).name + "\n");
@@ -36,6 +36,11 @@ public class BusinessList {
         result += ("State: " + list.get(index).state + "\n");
         result += ("ZipCode: " + list.get(index).zipCode + "\n");
         return (result);
+    }
+
+    public Business getDetail (int index)
+    {
+        return (list.get(index));
     }
 
     public void updateBusiness(int index, String name, String address, String city, String state, int zipCode) {

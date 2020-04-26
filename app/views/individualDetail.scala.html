@@ -1,0 +1,26 @@
+@(ind: Individual)
+
+@main("GeoLocator for Individuals"){
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="content">
+    @tabs()
+    <div class="wrapper doc">
+        <h1>Individual</h1>
+        <ol style="list-style-type:none;">
+            <li>ID: @ind.id</li>
+            <li style="font-weight: bold;">@ind.lastName, @ind.firstName</li>
+            <li>
+                <ol style="margin-left: 10px;">
+                    <li>Birthdate: @ind.birthDate.format("MMMMM dd, yyyy")</li>
+                    <li>Address:<ol style="margin-left: 10px;">
+                            <li>@ind.address</li>
+                            <li>@ind.city, @ind.state @ind.zipCode</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</section>
+}}
