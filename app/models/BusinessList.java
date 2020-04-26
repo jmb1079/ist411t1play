@@ -7,7 +7,7 @@ public class BusinessList {
     ArrayList<Business> list;
 
     public BusinessList() {
-        list = new ArrayList();
+        list = new ArrayList<Business>();
     }
 
     public ArrayList<Business> getAll() {
